@@ -6,8 +6,6 @@ const Wrapper = styled.div`
   justify-cotent: center;
   align-items: center;
   flex-direction: column
-  top: 0;
-  left: 0;
   width: 1280px;
   min-height: 234px;
   background-color: #CAE9FF;
