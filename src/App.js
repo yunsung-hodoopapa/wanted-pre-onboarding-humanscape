@@ -7,6 +7,7 @@ import styled from 'styled-components';
 import Layout from './view/Layout';
 import HeadLine from './components/HeadLine';
 import InputField from './components/InputField';
+import ResultField from './components/ResultField';
 
 const Container = styled.section`
   display: flex;
@@ -23,6 +24,8 @@ function App() {
       <Container>
         <HeadLine />
         <InputField />
+        <br />
+        <ResultField />
       </Container>
     </Layout>
   );
