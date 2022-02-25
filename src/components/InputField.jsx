@@ -60,11 +60,7 @@ const Button = styled.button`
   letter-spacing: -0.018em;
 `;
 
-const InputField = () => {
-  const [text, setText] = useState('');
-  const onChangeInput = e => {
-    setText(e.target.value);
-  };
+const InputField = ({ onChangeInput, inputValue }) => {
   return (
     <Wrapper>
       <InputFieldWrapper>
@@ -73,7 +69,8 @@ const InputField = () => {
         </IconContainer>
         <Div />
         <Input
-          type={text}
+          type="text"
+          value={inputValue}
           onChange={onChangeInput}
           placeholder="질환명을 입력해주세요"
         />
