@@ -1,18 +1,19 @@
 import React, { useState, useCallback } from 'react';
 import styled from 'styled-components';
-
+import GlobalStyle from './view/GlobalStyle';
 import Layout from './view/Layout';
 import HeadLine from './components/HeadLine';
 import InputField from './components/InputField';
 import ResultField from './components/ResultField';
-
 import { QueryClientProvider, QueryClient } from 'react-query';
-import { debounce, useResults } from './util/util';
+import { debounce } from './util/util';
 
 const queryClient = new QueryClient();
 
 const Container = styled.section`
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   margin: 29px 20px;
   max-width: 700px;
@@ -32,6 +33,7 @@ const App = () => {
 
   return (
     <QueryClientProvider client={queryClient}>
+      <GlobalStyle />
       <Layout>
         <Container>
           <HeadLine />

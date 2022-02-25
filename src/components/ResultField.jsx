@@ -1,8 +1,7 @@
-import React, { useCallback, useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { useQueryClient } from 'react-query';
 import { useResults } from '../util/util';
-import { BiSearchAlt2 } from 'react-icons/bi';
 
 const Wrapper = styled.div`
   display: flex;
@@ -11,10 +10,6 @@ const Wrapper = styled.div`
   background-color: #ffffff;
   border-radius: 42px;
   lint-height: 25.6px;
-`;
-
-const searchedUl = styled.ul`
-  display: flex;
 `;
 
 const SearchedItem = styled.li`
@@ -29,9 +24,9 @@ const SearchedItem = styled.li`
   cursor: pointer;
 `;
 
-const IconContainer = styled.div`
-  width: 20px;
-  height: 20px;
+const ResultHeader = styled.span`
+  font-size: 0.8rem;
+  color: #3b3b3b;
 `;
 
 const ResultField = ({ inputValue, setInputValue }) => {
@@ -39,7 +34,7 @@ const ResultField = ({ inputValue, setInputValue }) => {
 
   const { status, data, error } = useResults(inputValue);
 
-  const onHandleList = (name) => {
+  const onHandleList = name => {
     setInputValue(name);
   };
 
@@ -52,6 +47,7 @@ const ResultField = ({ inputValue, setInputValue }) => {
       default:
         return (
           <ul>
+            <ResultHeader>추천 검색어</ResultHeader>
             {data?.map(item => {
               return (
                 <SearchedItem

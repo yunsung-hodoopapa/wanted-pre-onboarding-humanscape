@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { useCallback } from 'react';
 import { useQuery } from 'react-query';
 
 const getResultByKeyword = async keyword => {
