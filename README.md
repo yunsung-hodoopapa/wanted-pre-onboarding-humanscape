@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# [Project1] 로그프레소 과제
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 배포 링크
+[https://zealous-poitras-180542.netlify.app](https://zealous-poitras-180542.netlify.app)
 
-## Available Scripts
+## 💿 실행 방법
 
-In the project directory, you can run:
+```cmd
+$ git clone https://github.com/yunsung-hodoopapa/wanted-pre-onboarding-humanscape.git
 
-### `npm start`
+$ npm install
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+$ npm run start
+```
+## 😎 3팀
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 양윤성: 어플리케이션 제작
+🤒 코로나 확진으로 커뮤니케이션이 불가능해서 혼자 진행
 
-### `npm test`
+## 적용 기술
+- react
+- styled-components
+- react-query
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## 👩‍💻구현
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 검색 기능
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 검색창을 통해 검색어를 입력
+- 검색어가 업데이트되면 외부 api로 GET 요청을 보내, 반환받은 데이터 객체를 검색창 하단에 렌더링
+- api 요청횟수를 절약하기 위해, 검색어 입력단계에서  debounce 함수를 적용
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<image src="https://images.velog.io/images/yunsungyang-omc/post/af8d47ff-a1fd-4431-a28e-5589f9ad881e/0ae5e1ff-7b48-422d-b155-738f391ff51b.gif">
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
