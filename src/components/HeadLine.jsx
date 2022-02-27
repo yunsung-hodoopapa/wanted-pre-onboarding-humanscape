@@ -12,7 +12,7 @@ const HeadLine = () => {
   return (
     <>
       <HeaderContainer>
-        국매임상시험 검색하고 온라인으로 참여하기
+        질환을 검색해보세요
       </HeaderContainer>
     </>
   );

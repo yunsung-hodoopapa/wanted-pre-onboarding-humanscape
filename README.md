@@ -31,5 +31,5 @@ $ npm run start
 - 검색어가 업데이트되면 외부 api로 GET 요청을 보내, 반환받은 데이터 객체를 검색창 하단에 렌더링
 - api 요청횟수를 절약하기 위해, 검색어 입력단계에서  debounce 함수를 적용
 
-<image src="https://images.velog.io/images/yunsungyang-omc/post/af8d47ff-a1fd-4431-a28e-5589f9ad881e/0ae5e1ff-7b48-422d-b155-738f391ff51b.gif">
+<image src="https://images.velog.io/images/yunsungyang-omc/post/5ed407c4-b3e8-4704-b003-b79829b6b2cd/Feb-27-2022%2023-55-15.gif">
 
