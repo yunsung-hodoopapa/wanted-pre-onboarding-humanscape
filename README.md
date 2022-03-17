@@ -1,4 +1,4 @@
-# [Project1] 로그프레소 과제
+# [Project1] 휴먼스케이프 과제
 
 ## 🚀 배포 링크
 [https://zealous-poitras-180542.netlify.app](https://zealous-poitras-180542.netlify.app)
